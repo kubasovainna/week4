@@ -7,23 +7,21 @@ const CORS = {
 const server = http.createServer(async(req,res)=>{
       if(req.url === '/result4/'){
           
-          res.writeHead(200,{
-              'Content-Type':'application/json',
-              ...CORS,
-          })
+          res.writeHead(200,{'Content-Type':'application/json', ...CORS})
           let data = '';
           await req.on('data', function(chunk){
             data += chunk;
             }).on('end', () => {
           })
+
           res.write(JSON.stringify({
             "message":"itmo224658",
-            "x-result":headers,
+            "x-result": req.headers['x-test'],
             "x-body":data
             }
-            ))
+            ));
       }
-      res.end()
+      res.end('\n')
       
   });
   let port_number = process.env.PORT || 4321;

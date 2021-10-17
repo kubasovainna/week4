@@ -13,10 +13,10 @@
     "url": "git+https://github.com/kubasovainna/week4.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Inna",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kubasovainna/week4/issues"
+    "url": "https://github.com/kubasovainna/week4"
   },
-  "homepage": "https://github.com/kubasovainna/week4#readme"
+  "homepage": "https://github.com/kubasovainna/week4"
 }
