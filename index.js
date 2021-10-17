@@ -26,5 +26,5 @@ const server = http.createServer(async(req,res)=>{
       res.end()
       
   });
-  server.listen(4321,()=>{
-      console.log('Server is running')});
+  let port_number = process.env.PORT || 4321;
+  s.listen(port_number);
