@@ -25,4 +25,4 @@ const server = http.createServer(async(req,res)=>{
       
   });
   let port_number = process.env.PORT || 4321;
-  s.listen(port_number);
+  server.listen(port_number);
