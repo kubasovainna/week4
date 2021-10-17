@@ -13,10 +13,10 @@ const server = http.createServer(async(req,res)=>{
             data += chunk;
             }).on('end', () => {
           })
-
+          let header = req.headers['x-test'];
           res.write(JSON.stringify({
             "message":"itmo224658",
-            "x-result": req.headers['x-test'],
+            "x-result": header,
             "x-body":data
             }
             ));
